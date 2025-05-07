@@ -5,10 +5,10 @@ body {
     padding: 0;
     background-color: #f5f5f5;
   }
-
+  
   header {
-    background-color: #008080; /* New teal color */
-    color: #fff;               /* Ensure the text is white for contrast */
+    background-color: #008080;  /* Teal color */
+    color: #fff;
     padding: 3em 1em;
     text-align: center;
   }
@@ -29,21 +29,21 @@ body {
   /* Video Section */
   #intro-video, #case-studies {
     margin: 3em auto;
-    max-width: 900px; /* Makes sure videos don’t exceed 900px */
-    width: 100%;
+    max-width: 900px; /* Limits the width of the video containers */
+    width: 100%; /* Ensures responsiveness */
   }
   
   iframe {
     border: none;
     border-radius: 8px;
-    max-width: 100%;  /* Ensures the iframe can scale down */
-    height: 400px;    /* Set the video height to be more manageable */
+    max-width: 100%;  /* Makes sure the iframe resizes proportionally */
+    height: 400px;    /* Set fixed height for consistency */
   }
   
-  /* Add responsiveness: Adjust video container to change based on screen size */
+  /* Add responsiveness: Adjust video container for smaller screens */
   @media (max-width: 768px) {
     iframe {
-      height: 300px; /* Smaller height for mobile screens */
+      height: 300px; /* Reduce height on mobile */
     }
   }
   
