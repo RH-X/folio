@@ -5,10 +5,10 @@ body {
     padding: 0;
     background-color: #f5f5f5;
   }
-  
+
   header {
-    background-color: #333;
-    color: #fff;
+    background-color: #008080; /* New teal color */
+    color: #fff;               /* Ensure the text is white for contrast */
     padding: 3em 1em;
     text-align: center;
   }
