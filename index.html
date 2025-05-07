@@ -1,31 +1,75 @@
-<!-- Intro Video -->
-<div id="intro-video">
-    <div style="position: relative; padding-bottom: 49.41798941798942%; height: 0;">
-      <iframe src="https://www.loom.com/embed/b1b12071fe58404da059a009c45f663f?sid=6064a458-8247-47a8-97ab-91270ec56b46" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-  </div>
-  
-  <!-- Project 1 -->
-  <div class="case-study">
-    <h3>Project 1</h3>
-    <div style="position: relative; padding-bottom: 60.952380952380956%; height: 0;">
-      <iframe src="https://www.loom.com/embed/5f522f45d3e34f02afa47616f3f38afd?sid=7e213657-4112-4125-b6e2-ed69c4790f4a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-  </div>
-  
-  <!-- Project 2 -->
-  <div class="case-study">
-    <h3>Project 2</h3>
-    <div style="position: relative; padding-bottom: 60.952380952380956%; height: 0;">
-      <iframe src="https://www.loom.com/embed/70ba545b971944909f40611690d5adb5?sid=ef5936f3-8ece-42d0-a41a-1abb4c835190" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-  </div>
-  
-  <!-- Project 3 -->
-  <div class="case-study">
-    <h3>Project 3</h3>
-    <div style="position: relative; padding-bottom: 60.952380952380956%; height: 0;">
-      <iframe src="https://www.loom.com/embed/0a6f2e0274a74f3b8ebfc49568966e05?sid=a9846182-5eb7-4f8d-8825-ef50e80f73a8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-  </div>
-  
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #008080;
+  color: #fff;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+section {
+  padding: 2em 1em;
+}
+
+/* Video Section */
+#intro-video, #case-studies {
+  margin: 3em auto;
+  max-width: 900px; /* Makes sure videos don’t exceed 900px */
+  width: 100%;
+}
+
+iframe {
+  border: none;
+  border-radius: 8px;
+  max-width: 100%;  /* Ensures the iframe can scale down */
+  height: 400px;    /* Set the video height to be more manageable */
+}
+
+/* Add responsiveness: Adjust video container to change based on screen size */
+@media (max-width: 768px) {
+  iframe {
+    height: 300px; /* Smaller height for mobile screens */
+  }
+}
+
+/* Specific Styling for Each Case Study */
+.case-study {
+  margin-bottom: 3em;
+}
+
+.case-study h3 {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.case-study p {
+  font-size: 1.1em;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #333;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
